@@ -38,6 +38,11 @@ if ( ! defined( 'WPINC' ) ) {
 define( 'CRATIVIA_VERSION', '1.0.0' );
 
 /**
+ * Composer Autoload
+ */
+require_once plugin_dir_path(__FILE__) . "/vendor/autoload.php";
+
+/**
  * The code that runs during plugin activation.
  * This action is documented in includes/class-crativia-activator.php
  */

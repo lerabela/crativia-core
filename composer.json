@@ -1,0 +1,17 @@
+{
+    "name": "ubuntu/crativia-core",
+    "description": "Crativia Core Plugin",
+    "type": "library",
+    "license": "GLP3",
+    "authors": [
+        {
+            "name": "Edwin Letlape",
+            "email": "edwin.letlape@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "respect/validation": "^2.1",
+        "gamajo/template-loader": "^1.3"
+    }
+}
