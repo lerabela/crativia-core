@@ -1,5 +1,4 @@
 <?php
-
 /**
  * The plugin bootstrap file
  *
@@ -43,45 +42,16 @@ define( 'CRATIVIA_VERSION', '1.0.0' );
 require_once plugin_dir_path(__FILE__) . "/vendor/autoload.php";
 
 /**
- * The code that runs during plugin activation.
- * This action is documented in includes/class-crativia-activator.php
+ * Plugin activation
  */
-function activate_crativia() {
-	require_once plugin_dir_path( __FILE__ ) . 'includes/class-crativia-activator.php';
-	Crativia_Activator::activate();
-}
+register_activation_hook( __FILE__, "Crativia\Crativia_Plugin_Core::activate" );
 
 /**
- * The code that runs during plugin deactivation.
- * This action is documented in includes/class-crativia-deactivator.php
+ * Plugin deactivation
  */
-function deactivate_crativia() {
-	require_once plugin_dir_path( __FILE__ ) . 'includes/class-crativia-deactivator.php';
-	Crativia_Deactivator::deactivate();
-}
-
-register_activation_hook( __FILE__, 'activate_crativia' );
-register_deactivation_hook( __FILE__, 'deactivate_crativia' );
+register_deactivation_hook( __FILE__, "Crativia\Crativia_Plugin_Core::deactivate" );
 
 /**
- * The core plugin class that is used to define internationalization,
- * admin-specific hooks, and public-facing site hooks.
+ * Add theme options page
  */
-require plugin_dir_path( __FILE__ ) . 'includes/class-crativia.php';
-
-/**
- * Begins execution of the plugin.
- *
- * Since everything within the plugin is registered via hooks,
- * then kicking off the plugin from this point in the file does
- * not affect the page life cycle.
- *
- * @since    1.0.0
- */
-function run_crativia() {
-
-	$plugin = new Crativia();
-	$plugin->run();
-
-}
-run_crativia();
+add_action( "admin_menu", "Crativia\Views\Crativia_Theme_Options::register" );
