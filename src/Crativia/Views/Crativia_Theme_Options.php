@@ -1,5 +1,6 @@
 <?php
 namespace Crativia\Views;
+use Crativia\Views\Crativia_Template_Loader;
 
 class Crativia_Theme_Options{
 
@@ -19,7 +20,10 @@ class Crativia_Theme_Options{
 
     public static function build(){
 
-        echo "Hello World";
+        $template_loader = new Crativia_Template_Loader;
+
+        // load template
+        $template_loader->get_template_part( 'theme/options/dashboard' ); 
 
     }
 

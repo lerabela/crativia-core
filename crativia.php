@@ -34,7 +34,9 @@ if ( ! defined( 'WPINC' ) ) {
  * Start at version 1.0.0 and use SemVer - https://semver.org
  * Rename this for your plugin and update it as you release new versions.
  */
-define( 'CRATIVIA_VERSION', '1.0.0' );
+define( "CRATIVIA_VERSION", "1.0.0" );
+define( "CRATIVIA_TEXT_DOMAIN", "crativia" );
+define( "CRATIVIA_PLUGIN_DIR", plugin_dir_path( __FILE__ ) );
 
 /**
  * Composer Autoload
@@ -55,3 +57,8 @@ register_deactivation_hook( __FILE__, "Crativia\Crativia_Plugin_Core::deactivate
  * Add theme options page
  */
 add_action( "admin_menu", "Crativia\Views\Crativia_Theme_Options::register" );
+
+/**
+ * Add Text Domain
+ */
+add_action('plugins_loaded', 'Crativia\Crativia_Plugin_Core::load_text_domain');

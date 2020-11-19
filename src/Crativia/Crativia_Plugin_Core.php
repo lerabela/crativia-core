@@ -9,8 +9,6 @@ class Crativia_Plugin_Core{
      */
     public static function activate(){
 
-        echo "Hello World";
-
     }
 
     /**
@@ -18,7 +16,16 @@ class Crativia_Plugin_Core{
      */
     public static function deactivate(){
 
+    }
+
+    /**
+     * Text domain 
+     */
+    public static function load_text_domain(){
+
+       // load_plugin_textdomain(CRATIVIA_TEXT_DOMAIN, false, dirname( plugin_basename( CRATIVIA_PLUGIN_DIR ) ) . "/languages/");
 
     }
+
 
 }

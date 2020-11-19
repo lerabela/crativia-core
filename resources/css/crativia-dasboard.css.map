@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,wBAAwB,CAAA;EACpB,QAAQ,EAAE,QAAQ;EAClB,QAAQ,EAAE,IAAI;EACd,MAAM,EAAE,MAAM;EACd,OAAO,EAAE,WAAW;EACpB,MAAM,EAAE,iBAAiB;EACzB,UAAU,EAAE,CAAC,CAAC,GAAG,CAAC,GAAG,CAAC,mBAAe;EACrC,UAAU,EAAE,IAAI;EAChB,SAAS,EAAE,IAAI;EACf,WAAW,EAAE,GAAG;CACnB",
+    "sources": [
+        "../scss/crativia-dasboard.scss"
+    ],
+    "names": [],
+    "file": "crativia-dasboard.css"
+}

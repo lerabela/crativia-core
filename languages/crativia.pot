@@ -1,0 +1,43 @@
+# Copyright (C) 2020 Crativia (Pty) Ltd
+# This file is distributed under the same license as the Crativia Core plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Crativia Core 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/crativia-core\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2020-11-19T01:11:46+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.4.0\n"
+"X-Domain: crativia\n"
+
+#. Plugin Name of the plugin
+msgid "Crativia Core"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://www.crativia.co.za"
+msgstr ""
+
+#. Description of the plugin
+msgid "This is a short description of what the plugin does. It's displayed in the WordPress admin area."
+msgstr ""
+
+#. Author of the plugin
+msgid "Crativia (Pty) Ltd"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://www.crativia.co.za/wp"
+msgstr ""
+
+#: resources/templates/theme/options/dashboard.php:1
+msgid "Crativia Theme Settings"
+msgstr ""
+
+#: resources/templates/theme/options/dashboard.php:5
+msgid "Welcome to Crativia WordPress Theme"
+msgstr ""
