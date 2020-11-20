@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,wBAAwB,CAAA;EAEpB,QAAQ,EAAE,QAAQ;EAClB,QAAQ,EAAE,IAAI;EACd,MAAM,EAAE,MAAM;EACd,OAAO,EAAE,WAAW;EACpB,UAAU,EAAE,IAAI;EAChB,SAAS,EAAE,IAAI;EACf,WAAW,EAAE,GAAG;EAChB,MAAM,EAAE,iBAAiB;EACzB,UAAU,EAAE,CAAC,CAAC,GAAG,CAAC,GAAG,CAAC,mBAAe;CAUxC;;AApBD,AAcQ,wBAdgB,CAYpB,sBAAsB,GAEhB,EAAE,CAAA;EACA,UAAU,EAAE,GAAG;EACf,aAAa,EAAE,GAAG;CACrB",
+    "sources": [
+        "../scss/crativia.scss"
+    ],
+    "names": [],
+    "file": "crativia.css"
+}

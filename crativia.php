@@ -37,6 +37,7 @@ if ( ! defined( 'WPINC' ) ) {
 define( "CRATIVIA_VERSION", "1.0.0" );
 define( "CRATIVIA_TEXT_DOMAIN", "crativia" );
 define( "CRATIVIA_PLUGIN_DIR", plugin_dir_path( __FILE__ ) );
+define( "CRATIVIA_ASSETS", plugin_dir_url( __FILE__ ) . "resources" );
 
 /**
  * Composer Autoload
@@ -61,4 +62,16 @@ add_action( "admin_menu", "Crativia\Views\Crativia_Theme_Options::register" );
 /**
  * Add Text Domain
  */
-add_action('plugins_loaded', 'Crativia\Crativia_Plugin_Core::load_text_domain');
+add_action("plugins_loaded", "Crativia\Crativia_Plugin_Core::load_text_domain");
+
+/**
+ * Enqueue Scripts
+ */
+add_action("admin_enqueue_scripts","Crativia\Crativia_Plugin_Core::enqueue_scripts");
+
+/**
+ * Enqueue Styles
+ */
+add_action("admin_enqueue_scripts","Crativia\Crativia_Plugin_Core::enqueue_styles");
+
+
