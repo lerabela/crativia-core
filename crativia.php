@@ -65,6 +65,12 @@ add_action( "admin_menu", "Crativia\Views\Crativia_Theme_Options::register" );
 add_action("plugins_loaded", "Crativia\Crativia_Plugin_Core::load_text_domain");
 
 /**
+ * Add Meta Box 
+ */
+add_action( "add_meta_boxes", "Crativia\MetaBox\Crativia_Identity::register" );
+add_action( "add_meta_boxes", "Crativia\MetaBox\Crativia_Core_Settings::register" );
+
+/**
  * Enqueue Scripts
  */
 add_action("admin_enqueue_scripts","Crativia\Crativia_Plugin_Core::enqueue_scripts");
@@ -73,5 +79,3 @@ add_action("admin_enqueue_scripts","Crativia\Crativia_Plugin_Core::enqueue_scrip
  * Enqueue Styles
  */
 add_action("admin_enqueue_scripts","Crativia\Crativia_Plugin_Core::enqueue_styles");
-
-

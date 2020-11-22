@@ -20,7 +20,7 @@ class Crativia_Theme_Options{
 	 * @access  private
 	 * @since   1.0.0
 	 */    
-    private static $slug = 'theme-options-'; 
+    private static $slug = 'crativia-options-'; 
 
     /**
      * Register - Method registers a theme menu item
@@ -48,7 +48,7 @@ class Crativia_Theme_Options{
      */
     public static function build(){
 
-        $template_loader = new Crativia_Template_Loader;
+        $template_loader = Crativia_Template_Loader::getInstance();
         // load template
         $template_loader->get_template_part( "theme/options/dashboard" ); 
 
